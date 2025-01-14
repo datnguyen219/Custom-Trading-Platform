@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Flask",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",  // Adjust this path to your Flask app entry point
+      "console": "integratedTerminal",
+      "env": {
+        "FLASK_APP": "__init__.py",  // Adjust this if your Flask app entry point is different
+        "FLASK_ENV": "development"
+      },
+      "args": [
+        "run",
+        "--no-debugger",
+        "--no-reload"
+      ],
+      "jinja": true
+    }
+  ]
+}
